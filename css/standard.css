@@ -1,0 +1,177 @@
+/* styles written in this file is for Standard */
+
+
+.clearfix:after{
+	content:		".";
+	display:		block;
+	visibility:		hidden;
+	height:			0.1px;
+	font-size:		0.1em;
+	line-height:		0;
+	clear:			both;
+}
+
+.clearfix{
+	zoom:			100%;
+}
+
+
+*{
+	margin:			0;
+	padding:		0;
+}
+
+html{
+	font-size:		62.5%;
+}
+
+body{
+	font-family:		'微软雅黑','Microsoft YaHei',sans-serif,Helvetica,Arial;
+	font-size:		16px;
+	font-size:		1.6rem;
+	line-height:		1.6;
+	background:		rgba(238,238,238,1);
+	color:			#333;
+	text-shadow:		1px 1px 1px #fff;
+}
+
+#wrapper{
+	
+}
+
+#teaser{
+	position:		fixed;
+	top:			0;
+	left:			0;
+	//z-index:		9999;
+	background-color:	#000;
+	background:		url(../img/main.png) no-repeat center center;
+	background-size:	cover;
+	width:			100%;
+	height:			100%;
+}
+
+
+#teaser .lbx{
+	display:		block;
+	color:			#fff;
+	text-decoration:	none;
+}
+
+#teaser .button{
+	position:		fixed;
+	top:			50%;
+	left:			50%;
+	margin:			-133px 0 0 -111px;
+	color:			#fff;
+	text-shadow:		1px 1px 1px #000;
+	text-align:		center;
+	//animation:		bounce 1s infinite ease;
+	//cursor:			pointer;
+}
+
+#teaser .button p{
+	margin:			10px auto;
+}
+
+#teaser .button .date{
+	width:			100px;
+	border:			1px solid #fff;
+	border-radius:		5px;
+}
+
+#teaser .button .date .month{
+	display:		block;
+	background:		rgba(255,255,255,0.3);
+	border-bottom:		1px solid #fff;
+	padding:		5px 0;
+}
+
+#teaser .button .date .day{
+	display:		block;
+	padding:		5px 0;
+	font-size:		48px;
+	font-size:		4.8rem;
+	font-weight:		bold;
+	text-shadow:		none;
+}
+
+#teaser .button .title{
+	font-size:		20px;
+	font-size:		2rem;
+}
+
+#teaser .button .cs{
+}
+
+#teaser .button.ani{
+	animation:		bounce 0.3s ease-in-out;
+}
+
+
+@keyframes bounce {
+	0%, 100% {transform: scale(1,1);}
+	20% {transform: scale(1.1,1.1);}
+	70% {transform: scale(0.8,0.8);}
+	80% {transform: scale(1,1);}
+	90% {transform: scale(0.9,0.9);}
+}
+
+
+
+#lb{
+	display:		none;
+	width:			350px;
+	height:			270px;
+	background:		url(../img/red_bg.png) no-repeat center center;
+	text-shadow:		none;
+}
+
+#lb p{
+	line-height:		1;
+	color:			#FCE8B5;
+	text-align:		center;
+}
+
+#lb .money{
+	padding-top:		75px;
+	font-size:		50px;
+	font-size:		5rem;
+}
+
+#lb .money span.unit{
+	font-size:		20px;
+	font-size:		2rem;
+}
+
+#lb .txt{
+	margin-top:		20px;
+	font-size:		20px;
+	font-size:		2rem;
+}
+
+#lb .btn{
+	width:			310px;
+	margin:			35px auto 0;
+}
+
+#lb .btn a{
+	display:		block;
+	background:		#FCE8B5;
+	border-radius:		5px;
+	padding:		15px 0;
+	font-size:		20px;
+	font-size:		2rem;
+	color:			#E24943;
+	text-decoration:	none;
+}
+
+#lb .btn img{
+	vertical-align:		top;
+}
+
+
+
+
+
+
