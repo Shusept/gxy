@@ -1,5 +1,13 @@
 $(document).ready(function(){
 	
+	
+	// 轮播背景
+	$("#teaser").bgswitcher({
+		images: ["img/main1.jpg", "img/main2.jpg", "img/main3.jpg"],
+		duration: 1000
+	});
+	
+	
 	// 倒计时
 	//$('#clock').flipcountdown();
 	$('#timer').flipcountdown({
@@ -28,6 +36,9 @@ $(document).ready(function(){
 					"background":"rgba(0,0,0,0.5)"
 				}
 			}
+		},
+		afterClose: function(){
+			$("#lb").removeClass("face2");
 		}
 	});
 	
@@ -36,6 +47,12 @@ $(document).ready(function(){
 	$(".lbx").click(function(document){
 		var val = Math.round( Math.random()*1000 )/100;
 		$(".num").html(val);
+	});
+	
+	
+	// 点击发红包按钮显示二维码
+	$(".btn span").click(function(document){
+		$("#lb").addClass("face2");
 	});
 	
 	

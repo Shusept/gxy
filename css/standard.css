@@ -39,14 +39,16 @@ body{
 	
 }
 
+.bgswitcher{
+	background-position:	center center !important;
+	background-size:	cover !important;
+}
+
 #teaser{
 	position:		fixed;
 	top:			0;
 	left:			0;
 	//z-index:		9999;
-	background-color:	#000;
-	background:		url(../img/main.png) no-repeat center center;
-	background-size:	cover;
 	width:			100%;
 	height:			100%;
 }
@@ -135,6 +137,7 @@ body{
 
 #lb .money{
 	padding-top:		75px;
+	margin-bottom:		20px;
 	font-size:		50px;
 	font-size:		5rem;
 }
@@ -145,17 +148,39 @@ body{
 }
 
 #lb .txt{
-	margin-top:		20px;
+	margin-bottom:		38px;
 	font-size:		20px;
 	font-size:		2rem;
 }
 
-#lb .btn{
-	width:			310px;
-	margin:			35px auto 0;
+#lb .txt2{
+	display:		none;
+	margin-bottom:		10px;
+	font-size:		16px;
+	font-size:		1.6rem;
 }
 
-#lb .btn a{
+#lb ul{
+	display:		none;
+	list-style:		none;
+	width:			280px;
+	margin:			0 auto 5px;
+}
+
+#lb ul li:first-child{
+	float:			left;
+}
+
+#lb ul li:last-child{
+	float:			right;
+}
+
+#lb .btn{
+	width:			310px;
+	margin:			0 auto;
+}
+
+#lb .btn span{
 	display:		block;
 	background:		#FCE8B5;
 	border-radius:		5px;
@@ -164,11 +189,33 @@ body{
 	font-size:		2rem;
 	color:			#E24943;
 	text-decoration:	none;
+	cursor:			pointer;
 }
 
 #lb .btn img{
 	vertical-align:		top;
 }
+
+
+#lb.face2 .money{
+	padding-top:		10px;
+	margin-bottom:		5px;
+	font-size:		30px;
+	font-size:		3rem;
+}
+
+#lb.face2 .txt{
+	display:		none;
+}
+
+#lb.face2 .txt2{
+	display:		block;
+}
+
+#lb.face2 ul{
+	display:		block;
+}
+
 
 
 
