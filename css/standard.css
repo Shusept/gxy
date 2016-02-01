@@ -76,6 +76,13 @@ body{
 	margin:			10px auto;
 }
 
+#teaser .button .nosee{
+	margin:			0;
+	font-size:		40px;
+	font-size:		4rem;
+	line-height:		1;
+}
+
 #teaser .button .date{
 	width:			100px;
 	border:			1px solid #fff;
@@ -104,6 +111,7 @@ body{
 }
 
 #teaser .button .cs{
+	margin-bottom:		0;
 }
 
 #teaser .button.ani{
