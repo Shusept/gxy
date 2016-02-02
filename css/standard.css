@@ -181,6 +181,14 @@ body{
 	margin:			0 auto 5px;
 }
 
+#lb ul li{
+	width:			120px;
+	font-size:		14px;
+	font-size:		1.4rem;
+	color:			#FCE8B5;
+	text-align:		center;
+}
+
 #lb ul li:first-child{
 	float:			left;
 }
@@ -212,7 +220,7 @@ body{
 
 
 #lb.face2 .money{
-	padding-top:		10px;
+	padding-top:		20px;
 	margin-bottom:		5px;
 	font-size:		30px;
 	font-size:		3rem;
@@ -228,6 +236,10 @@ body{
 
 #lb.face2 ul{
 	display:		block;
+}
+
+#lb.face2 .btn{
+	display:		none;
 }
 
 
