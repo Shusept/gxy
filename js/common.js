@@ -1,3 +1,17 @@
+// 图片预加载及进度条
+window.addEventListener('DOMContentLoaded', function() {
+    "use strict";
+    var ql = new QueryLoader2(document.querySelector("body"), {
+        barColor: "#666",
+        backgroundColor: "#eee",
+        percentage: true,
+        barHeight: 10,
+        minimumTime: 1000,
+        fadeOutTime: 3000
+    });
+});
+
+
 $(document).ready(function(){
 	
 	
