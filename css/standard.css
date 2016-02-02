@@ -156,6 +156,12 @@ body{
 	font-size:		5rem;
 }
 
+#lb .money span.pay{
+	display:		none;
+	font-size:		20px;
+	font-size:		2rem;
+}
+
 #lb .money span.unit{
 	font-size:		20px;
 	font-size:		2rem;
@@ -224,6 +230,17 @@ body{
 	margin-bottom:		5px;
 	font-size:		30px;
 	font-size:		3rem;
+}
+
+#lb.face2 .money span.pay{
+	display:		inline;
+	font-size:		12px;
+	font-size:		1.2rem;
+}
+
+#lb.face2 .money span.unit{
+	font-size:		12px;
+	font-size:		1.2rem;
 }
 
 #lb.face2 .txt{
