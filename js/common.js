@@ -8,6 +8,21 @@ $(document).ready(function(){
 	});
 	
 	
+	// 绘文字循环切换
+	$('.nosee').dynamo({
+		speed: 500,
+		delay: 1000,
+		lines: ["🙈", "🙉", "🙊"]
+	});
+	
+	
+	$('.noseetxt').dynamo({
+		speed: 500,
+		delay: 1000,
+		lines: ["非礼勿视", "非礼勿听", "非礼勿言"]
+	});
+	
+	
 	// 倒计时
 	//$('#clock').flipcountdown();
 	$('#timer').flipcountdown({
