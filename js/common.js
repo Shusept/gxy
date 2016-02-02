@@ -23,18 +23,18 @@ $(document).ready(function(){
 	
 	
 	// 绘文字循环切换
-	$('.nosee').dynamo({
-		speed: 500,
-		delay: 1000,
-		lines: ["🙈", "🙉", "🙊"]
-	});
+	//$('.nosee').dynamo({
+	//	speed: 500,
+	//	delay: 1000,
+	//	lines: ["🙈", "🙉", "🙊"]
+	//});
 	
 	
-	$('.noseetxt').dynamo({
-		speed: 500,
-		delay: 1000,
-		lines: ["非礼勿视", "非礼勿听", "非礼勿言"]
-	});
+	//$('.noseetxt').dynamo({
+	//	speed: 500,
+	//	delay: 1000,
+	//	lines: ["非礼勿视", "非礼勿听", "非礼勿言"]
+	//});
 	
 	
 	// 倒计时
@@ -46,9 +46,9 @@ $(document).ready(function(){
 	
 	
 	// hover时添加弹跳效果class
-	$(".button").hover(function(document){
-		$(this).toggleClass("ani");
-	});
+	//$(".button").hover(function(document){
+	//	$(this).toggleClass("ani");
+	//});
 	
 	
 	// lightbox
@@ -74,7 +74,7 @@ $(document).ready(function(){
 	
 	// 每次打开lightbox生成随机金额
 	$(".lbx").click(function(document){
-		var val = Math.round( Math.random()*1000 )/100;
+		var val = Math.round( Math.random()*200 )/100;
 		$(".num").html(val);
 	});
 	
