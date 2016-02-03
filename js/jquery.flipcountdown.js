@@ -21,7 +21,7 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 			size		:'md',
 			
 			beforeDateTime:false,
-			
+			callback:null,
 			prettyPrint :function( chars ){
 				return (chars instanceof Array)?chars.join(' '):chars;
 			}
@@ -36,6 +36,7 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 			xs:24
 		},
 		
+		_canReturn = true,
 		createFlipCountDown = function( $box ){
 			var $flipcountdown 	= $('<div class="xdsoft_flipcountdown"></div>'),
 				$clearex 		= $('<div class="xdsoft_clearex"></div>'),	 
@@ -43,7 +44,6 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 				options = $.extend({},default_options),
 				
 				timer = 0,
-				
 				_animateRange = function( box,a,b ){
 					if( !isNaN(a) ){
 						_animateOne( box,a,((a>b && !(a==9&&b==0) )||(a==0&&b==9))?-1:1,!((a==9&&b==0)||(a==0&&b==9))?Math.abs(a-b):1 );
@@ -84,8 +84,9 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 				},
 				
 				_generate = function( chars ){
-					if( !(chars instanceof Array) || !chars.length )
+					if( !(chars instanceof Array) || !chars.length ){
 						return false;
+					}
 					for( var i = 0, n = chars.length;i<n;i++ ){
 						if( !blocks[i] ){
 							blocks[i] = $('<div class="xdsoft_digit"></div>');
@@ -123,6 +124,7 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 				},
 				
 				counter = 0,
+				
 				
 				_calcMoment = function(){
 					var value = '1',chars = [];
@@ -162,6 +164,11 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 								chars = value.toString().split('');
 							break;
 						}
+						
+						if (value == "00 00 00 00" && _canReturn) {
+							_options.callback && _options.callback();
+							_canReturn = false;
+						};
 						_generate(chars);
 					}
 				};
@@ -172,8 +179,9 @@ jQuery.fn.flipCountDown = jQuery.fn.flipcountdown = function( _options ){
 				.append($clearex)
 				.on('xdinit.xdsoft',function(){
 					clearInterval(timer);
-					if( options.autoUpdate )
+					if( options.autoUpdate ){
 						timer = setInterval( _calcMoment,options.period );
+					}
 					_calcMoment();
 				});
 				
