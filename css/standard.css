@@ -64,6 +64,7 @@ body{
 }
 
 #teaser .button{
+	//display:		none;
 	position:		fixed;
 	top:			50%;
 	left:			50%;
@@ -320,6 +321,34 @@ body{
 	font-size:		7rem;
 }
 
+
+#form .ticket{
+	position:		absolute;
+	left:			0;
+	top:			0;
+	z-index:		-1;
+	background:		url(../img/boruto.jpg) no-repeat center center;
+	background-size:	contain;
+	width:			100%;
+	height:			100%;
+	opacity:		0;
+}
+
+#form .ticket.zoom{
+	z-index:		1;
+	animation:		zoomin 6s ease;
+}
+
+@keyframes zoomin{
+	0% {opacity:0;transform:scale(1,1);}
+	30% {opacity:1;transform:scale(3,3);}
+	70% {opacity:1;transform:scale(3,3);}
+	100% {opacity:0;transform:scale(5,5);}
+}
+
+#form .bingo{
+	display:		none;
+}
 
 
 
