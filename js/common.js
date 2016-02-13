@@ -46,7 +46,7 @@ $(document).ready(function(){
 	//$('#clock').flipcountdown();
 	$('#timer').flipcountdown({
 		size:'sm',
-		beforeDateTime:'2/14/2016 00:00:00',
+		beforeDateTime:'2/13/2016 22:00:00',
 		callback:function(){
 			$(".button").fadeOut(3000).css("display","none");
 			$("#form").fadeIn(3000).css("display","block");
